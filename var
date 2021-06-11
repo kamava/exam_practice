@@ -1,0 +1,21 @@
+{
+        delegate double average(double x, double y, double z);
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter your values");
+            average operation = delegate (double x, double y, double z)
+             {
+
+                 return  (x + y + z)/ 3 ;
+             };
+
+
+            double res = operation(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
+
+            Console.WriteLine(res);
+            Console.ReadKey();
+
+
+        }
+
+    }
